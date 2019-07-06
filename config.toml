@@ -1,0 +1,12 @@
+## ITOC Config ##
+
+title   = "Grafana UIM Adapter Configuration"
+
+[adapter]
+ipaddress = ""
+port = "8089"
+
+[uim]
+ipaddress   = "10.250.193.180" ##ip:port
+username      = "agit1" ##apiusername
+password     = "agitapm1234" #apipassword
