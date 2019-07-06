@@ -188,8 +188,11 @@ func main() {
 	uimUsername := viper.Get("uim.username").(string)
 	uimPassword := viper.Get("uim.password").(string)
 
+	adapterIP := viper.Get("adapter.ipaddress").(string)
+	adapterPort := viper.Get("adapter.port").(string)
+
 	uim.SetConnection(uimIP, uimUsername, uimPassword)
 	uimConn := uim.GetConnectionInfo()
 	fmt.Println("connect to uim api: " + uimConn.APIEndpoint)
-	r.Run(":8089")
+	r.Run(adapterIP + ":" + adapterPort)
 }
