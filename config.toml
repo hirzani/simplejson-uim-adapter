@@ -1,0 +1,8 @@
+## ITOC Config ##
+
+title   = "Grafana UIM Adapter Configuration"
+
+[uim]
+ipaddress   = "" ##ip:port
+username      = "" ##apiusername
+password     = "" #apipassword
